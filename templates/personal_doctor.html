@@ -1,0 +1,11 @@
+{%extends 'base.html'%}
+
+{%block title%}
+{{doctors.name}} {{doctors.surname}}
+{%endblock}
+
+{%block content%}
+<h1>{{doctors.name}} {{doctors.surname}}</h1>
+<p>{{boctors.specialization}}</p>
+<img src="{{doctors.url_image}}" width="700" height="270" alt="">
+{%endblock%}

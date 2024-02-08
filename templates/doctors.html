@@ -1,0 +1,21 @@
+{%extends "base.html"%}
+
+{%block title%}
+Medclinic.ru
+{%endblock%}
+
+{%block content%}
+
+<h1>Наши доктора</h1>
+
+{%for doctor in doctors%}
+<p><a href="{{url_for('personal_doctor',doctors_id=doctor.id)}}">{{doctor.name}} {{doctor.surname}}</a> {{doctor.specialization}}</p>
+
+{% endfor %}
+
+{%endblock%}
+
+
+
+
+        
